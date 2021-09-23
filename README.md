@@ -1,5 +1,15 @@
-# Calculadora básica utilizando JavaScript Puro
+# Calculadora básica utilizando Vanilla JavaScript
 
-### Projeto pessoal para prática de lógica de programação, estruturação de dados e design de interfaces.
+<img src="images/img-print.png">
 
-O projeto conterá um arquivo HTML, um arquivo CSS e um arquivo JavaScript.
+### Projeto pessoal para prática de lógica de programação e design de interfaces.
+
+##### Tecnologias utilizadas.
+
+* HTML
+* Sass
+* JavaScript
+
+##### Acesse a aplicação
+
+
