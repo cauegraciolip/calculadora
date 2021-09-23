@@ -1,0 +1,154 @@
+$main-bg: #3a4764;
+$calc-color: #232c43;
+$screen-bg: #182034;
+$btn-ops: #637097;
+$btn-ops-shadow: #404e72;
+$btn-red: #d03f2f;
+$btn-red-shadow: #93261a;
+$btn-color: #eae3dc;
+$btn-color-shadow: #b4a597;
+$text-color: #444b5a;
+$white: #ffffff;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+    font-size: 32px;
+}
+
+body {
+    width: 100%;
+    background-color: $main-bg;
+}
+
+#corpo_calc {
+    display: block;
+    margin: auto;
+    margin-top: 15vh;
+    width: 85%;
+    max-width: 320px;
+    text-align: center;
+
+    #topo_calc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 0.6rem;
+            color: $white;
+        }
+    }
+}
+
+#display {
+    display: flex;
+
+    text-align: right;
+    align-items: center;
+    justify-content: right;
+    color: $white;
+    font-size: 0.85rem;
+
+    background-color: $screen-bg;
+    padding: 0.4rem;
+    margin-bottom: 0.25rem;
+    height: 2.1rem;
+
+    border-radius: 0.15rem;
+}
+
+#btn_calc {
+    background-color: $calc-color;
+    border-radius: 0.15rem;
+    padding: 0.02rem;
+}
+
+.linha1, .linha2, .linha3, .linha4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0.4rem;
+}
+
+@mixin botao-config {
+    width: 65px;
+    height: 30px;
+    padding: 0.3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0rem;
+    border: none;
+    border-radius: 0.15rem;
+    transition: all 0.3s ease;
+    font-size: 0.6rem;
+}
+
+.btn_number, .btn_operators, .btn_ponto {
+    color: $text-color;
+
+    background-color: $btn-color;
+    box-shadow: 0px 2px 0px 0px $btn-color-shadow;
+
+    @include botao-config;
+
+    &:hover {
+        background-color: darken($btn-color, 4);
+        box-shadow: darken($btn-color-shadow, 4);
+        cursor: pointer;
+    }
+}
+
+#delete {
+    @include botao-config;
+
+    font-size: 0.4rem;
+    background-color: $btn-ops;
+    box-shadow: 0px 2px 0px 0px $btn-ops-shadow;
+    color: $white;
+
+    padding: 0.3rem;
+
+    &:hover {
+        background-color: darken($btn-ops, 4);
+        box-shadow: darken($btn-ops-shadow, 4);
+        cursor: pointer;
+    }
+}
+
+@mixin botao-inf() {
+    width: 45%;
+    font-size: 0.4rem;
+    color: $white;
+    margin: 0.4rem 0rem;
+}
+
+#resultado {
+    @include botao-config();
+    @include botao-inf();
+    background-color: $btn-red;
+    box-shadow: 0px 2px 0px 0px $btn-red-shadow;
+
+    &:hover {
+        background-color: darken($btn-red, 4);
+        box-shadow: 0px 2px 0px 0px darken($btn-red-shadow, 4);
+        cursor: pointer;
+    }
+}
+
+#reset {
+    @include botao-config();
+    @include botao-inf();
+    background-color: $btn-ops;
+    box-shadow: 0px 2px 0px 0px $btn-ops-shadow;
+
+    &:hover {
+        background-color: darken($btn-ops, 4);
+        box-shadow: 0px 2px 0px 0px darken($btn-ops-shadow, 4);
+        cursor: pointer;
+    }
+}
+
+
+

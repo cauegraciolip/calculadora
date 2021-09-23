@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 32px;
+}
+
+body {
+  width: 100%;
+  background-color: #3a4764;
+}
+
+#corpo_calc {
+  display: block;
+  margin: auto;
+  margin-top: 15vh;
+  width: 85%;
+  max-width: 320px;
+  text-align: center;
+}
+
+#corpo_calc #topo_calc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#corpo_calc #topo_calc h1 {
+  font-size: 0.6rem;
+  color: #ffffff;
+}
+
+#display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  color: #ffffff;
+  font-size: 0.85rem;
+  background-color: #182034;
+  padding: 0.4rem;
+  margin-bottom: 0.25rem;
+  height: 2.1rem;
+  border-radius: 0.15rem;
+}
+
+#btn_calc {
+  background-color: #232c43;
+  border-radius: 0.15rem;
+  padding: 0.02rem;
+}
+
+.linha1, .linha2, .linha3, .linha4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 0.4rem;
+}
+
+.btn_number, .btn_operators, .btn_ponto {
+  color: #444b5a;
+  background-color: #eae3dc;
+  -webkit-box-shadow: 0px 2px 0px 0px #b4a597;
+          box-shadow: 0px 2px 0px 0px #b4a597;
+  width: 65px;
+  height: 30px;
+  padding: 0.3rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0rem;
+  border: none;
+  border-radius: 0.15rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 0.6rem;
+}
+
+.btn_number:hover, .btn_operators:hover, .btn_ponto:hover {
+  background-color: #e2d9cf;
+  -webkit-box-shadow: #ab9b8b;
+          box-shadow: #ab9b8b;
+  cursor: pointer;
+}
+
+#delete {
+  width: 65px;
+  height: 30px;
+  padding: 0.3rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0rem;
+  border: none;
+  border-radius: 0.15rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 0.6rem;
+  font-size: 0.4rem;
+  background-color: #637097;
+  -webkit-box-shadow: 0px 2px 0px 0px #404e72;
+          box-shadow: 0px 2px 0px 0px #404e72;
+  color: #ffffff;
+  padding: 0.3rem;
+}
+
+#delete:hover {
+  background-color: #5b678b;
+  -webkit-box-shadow: #394565;
+          box-shadow: #394565;
+  cursor: pointer;
+}
+
+#resultado {
+  width: 65px;
+  height: 30px;
+  padding: 0.3rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0rem;
+  border: none;
+  border-radius: 0.15rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 0.6rem;
+  width: 45%;
+  font-size: 0.4rem;
+  color: #ffffff;
+  margin: 0.4rem 0rem;
+  background-color: #d03f2f;
+  -webkit-box-shadow: 0px 2px 0px 0px #93261a;
+          box-shadow: 0px 2px 0px 0px #93261a;
+}
+
+#resultado:hover {
+  background-color: #bf3a2b;
+  -webkit-box-shadow: 0px 2px 0px 0px #822217;
+          box-shadow: 0px 2px 0px 0px #822217;
+  cursor: pointer;
+}
+
+#reset {
+  width: 65px;
+  height: 30px;
+  padding: 0.3rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0rem;
+  border: none;
+  border-radius: 0.15rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-size: 0.6rem;
+  width: 45%;
+  font-size: 0.4rem;
+  color: #ffffff;
+  margin: 0.4rem 0rem;
+  background-color: #637097;
+  -webkit-box-shadow: 0px 2px 0px 0px #404e72;
+          box-shadow: 0px 2px 0px 0px #404e72;
+}
+
+#reset:hover {
+  background-color: #5b678b;
+  -webkit-box-shadow: 0px 2px 0px 0px #394565;
+          box-shadow: 0px 2px 0px 0px #394565;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
