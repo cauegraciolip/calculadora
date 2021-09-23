@@ -4,12 +4,12 @@
 
 ### Projeto pessoal para prática de lógica de programação e design de interfaces.
 
-##### Tecnologias utilizadas.
+### Tecnologias utilizadas.
 
 * HTML
 * Sass
 * JavaScript
 
-##### Acesse a aplicação
+### Acesse a aplicação
 
-
+https://cauegraciolip.github.io/calculadora/
