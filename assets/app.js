@@ -48,10 +48,11 @@ apagar.addEventListener('click', function cleanLast() {
     let disp = display.textContent.substring(0, display.textContent.length -1)
 
     display.textContent = disp
+    dot = true
 })
 
 reset.addEventListener('click', function resetDisplay() {
-    display.textContent = ""
+    location.reload()
 })
 
 igual.addEventListener('click', function resultado() {
